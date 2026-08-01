@@ -11,6 +11,17 @@ I build and explore projects in **CUDA, AI/ML, and Audio ML**, with a particular
 
 ---
 
+<!-- Typing animation -->
+<div align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?color=18A4F7&size=28&center=true&vCenter=true&width=800&height=60&lines=Hello+there!" alt="Typing SVG">
+
+<br>
+
+<a href="https://t.me/Nek1tJO"><img src="https://img.shields.io/badge/Telegram-%40Nek1tJO-26A5E4?style=flat&logo=telegram&logoColor=white" alt="Telegram"></a> <img src="https://visitor-badge.laobi.icu/badge?page_id=Nek1tt.Nek1tt&left_text=Profile%20Views" alt="Profile Views">
+
+</div>
+
 ## About me
 
 - Research and engineering in **AI/ML and efficient neural-network inference**
@@ -85,3 +96,9 @@ I build and explore projects in **CUDA, AI/ML, and Audio ML**, with a particular
 <img src="./profile/activity.svg" width="100%" alt="GitHub contribution heatmap"/>
 
 </div>
+
+---
+
+<p align="center">
+  <img src="./profile/quote.svg" width="85%" alt="Quote">
+</p>
