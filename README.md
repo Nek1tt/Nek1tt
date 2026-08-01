@@ -2,10 +2,10 @@
 
 # Nikita Abramov
 
-### AI / ML · Computer Vision · CUDA · Robotics · Autonomous Agents
+### AI / ML · CUDA · Robotics · Audio ML
 
-I build research prototypes and engineering systems at the intersection of
-**machine learning, GPU computing, computer vision, robotics, audio ML and intelligent agents**.
+4th-year student at **Novosibirsk State University (NSU)**.  
+I build and explore projects in **CUDA, AI/ML, and Audio ML**, with a particular interest in efficient inference and applied machine learning.
 
 </div>
 
@@ -17,11 +17,14 @@ I build research prototypes and engineering systems at the intersection of
 - **CUDA, PyTorch, ONNX Runtime** and performance-oriented ML systems
 - **Computer Vision:** detection, tracking and human attribute recognition
 - **Robotics:** ROS 2, autonomous navigation and vision-based control
-- **Audio ML:** real-time event recognition and inference pipelines
-- **LLM / autonomous agents:** BDI architectures and multi-agent simulations
-- I prefer projects that combine an interesting idea with **working software, tests, benchmarks and deployment**
+- **Audio ML:** using AI/ML for audio analysis, sound event recognition, and intelligent audio processing
 
 ---
+
+## Highlights
+
+- 🌍 **SMILES 2026** — participant of the international Machine Learning summer school organized by **Skoltech AI Center and Nanjing University**  
+  Worked on **[RNS-based LLM inference acceleration](https://github.com/Nek1tt/rns-llm)** on NVIDIA GPUs, focusing on CUDA optimization and Transformer inference
 
 ## Featured projects
 
