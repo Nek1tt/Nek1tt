@@ -24,59 +24,19 @@ jobs:
       - name: Prepare directories
         run: mkdir -p .generated profile
 
-      # Comprehensive statistics:
-      # repositories, stars/forks/watchers, contributions, PRs/issues/reviews,
-      # contribution targets, private contribution count (if shared on GitHub),
-      # and language distribution.
-      - name: Generate comprehensive GitHub statistics
-        id: userstats
-        continue-on-error: true
-        uses: cicirello/user-statistician@v1
-        with:
-          image-file: .generated/userstats.svg
-          colors: dark
-          custom-title: GitHub Statistics
-      
-          hide-keys: >-
-            featured,
-            mostStarred,
-            mostForked,
-            followers,
-            following,
-            sponsors,
-            sponsoring,
-            starredBy,
-            forkedBy,
-            watchedBy,
-            templates,
-            archived,
-            issues,
-            reviews,
-            private
-      
-          max-languages: 5
-          animated-language-chart: false
-      
-          border-radius: 8
-          show-border: true
-          fail-on-error: true
-          commit-and-push: false
-      
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # Custom cards generated directly from GitHub's contribution calendar.
-      # No public stats server is involved.
-      - name: Generate contribution streak and activity
+      # All account statistics, Top-5 languages, streak and heatmap
+      # are generated locally from GitHub REST / GraphQL APIs.
+      - name: Generate profile statistics
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_LOGIN: ${{ github.repository_owner }}
           OUTPUT_DIR: .generated
           PROFILE_TIMEZONE: Europe/Berlin
-        run: python scripts/generate_contribution_cards.py
+        run: python scripts/generate_profile_cards.py
 
-      # Featured repository cards are rendered in Actions and saved as static SVGs.
+      # Featured repository cards remain static local SVGs in the README.
+      # The action is only used during scheduled generation.
       - name: Generate rns-llm card
         continue-on-error: true
         uses: stats-organization/github-readme-stats-action@v2
@@ -137,8 +97,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: true
 
-      # Only valid SVG files are promoted. If any generator is temporarily
-      # unavailable, the previous working SVG remains untouched.
+      # A failed API call never destroys the previous working card.
       - name: Keep only valid generated SVGs
         run: python scripts/promote_generated_svgs.py .generated profile
 

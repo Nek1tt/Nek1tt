@@ -26,6 +26,8 @@ I build and explore projects in **CUDA, AI/ML, and Audio ML**, with a particular
 - 🌍 **SMILES 2026** — participant of the international Machine Learning summer school organized by **Skoltech AI Center and Nanjing University**  
   Worked on **[RNS-based LLM inference acceleration](https://github.com/Nek1tt/rns-llm)** on NVIDIA GPUs, focusing on CUDA optimization and Transformer inference
 
+---
+
 ## Featured projects
 
 <div align="center">
@@ -80,8 +82,6 @@ I build and explore projects in **CUDA, AI/ML, and Audio ML**, with a particular
 
 <br/>
 
-<img src="./profile/activity.svg" width="100%" alt="Contribution activity"/>
+<img src="./profile/activity.svg" width="100%" alt="GitHub contribution heatmap"/>
 
 </div>
-
-

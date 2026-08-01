@@ -44,7 +44,9 @@ def healthy_svg(path: Path) -> bool:
 
 def main():
     if len(sys.argv) != 3:
-        raise SystemExit("Usage: promote_generated_svgs.py GENERATED_DIR DEST_DIR")
+        raise SystemExit(
+            "Usage: promote_generated_svgs.py GENERATED_DIR DEST_DIR"
+        )
 
     generated = Path(sys.argv[1])
     dest = Path(sys.argv[2])
@@ -62,7 +64,10 @@ def main():
             print(f"PROMOTED  {filename}")
             promoted += 1
         elif target.exists():
-            print(f"PRESERVED {filename} (new generation unavailable/invalid)")
+            print(
+                f"PRESERVED {filename} "
+                "(new generation unavailable/invalid)"
+            )
             preserved += 1
         else:
             print(f"MISSING   {filename}")
