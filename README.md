@@ -81,41 +81,6 @@ I build research prototypes and engineering systems at the intersection of
 
 </div>
 
-> Language distribution is based on code size in public, non-fork repositories.
-> It is a repository metric, not a ranking of proficiency.
-
 ---
 
-## Research & engineering focus
 
-```text
-Machine Learning
-├── Computer Vision
-│   ├── Detection
-│   ├── Tracking
-│   └── Attribute Recognition
-├── Efficient Inference
-│   ├── CUDA
-│   ├── Quantization
-│   ├── ONNX Runtime
-│   └── Transformer Optimization
-├── Applied ML
-│   ├── Audio Event Recognition
-│   └── Scientific / Spectral Data
-├── Robotics
-│   ├── ROS 2
-│   ├── Autonomous Navigation
-│   └── Vision-based Control
-└── Intelligent Agents
-    ├── BDI Architectures
-    ├── Multi-Agent Systems
-    └── LLM-powered Behavior
-```
-
----
-
-<div align="center">
-
-### Research ideas → measurable experiments → working systems
-
-</div>
