@@ -81,6 +81,4 @@ I build research prototypes and engineering systems at the intersection of
 
 </div>
 
----
-
 
