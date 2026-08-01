@@ -100,5 +100,5 @@ I build and explore projects in **CUDA, AI/ML, and Audio ML**, with a particular
 ---
 
 <p align="center">
-  <img src="./profile/quote.svg" width="85%" alt="Quote">
+  <img src="./profile/quote_nf.svg" width="85%" alt="Quote">
 </p>
