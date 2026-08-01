@@ -1,20 +1,4 @@
 #!/usr/bin/env python3
-"""
-Generate all local GitHub profile statistics cards.
-
-Outputs:
-    userstats.svg  - selected account/repository metrics + Top 5 languages
-    streak.svg     - current streak, all-time longest streak, yearly contributions
-    activity.svg   - GitHub-style contribution heatmap for the last 365 days
-
-The script uses only the Python standard library and GitHub REST / GraphQL APIs.
-
-Environment:
-    GITHUB_TOKEN       GitHub Actions token
-    GITHUB_LOGIN       GitHub username
-    OUTPUT_DIR         output directory, default ".generated"
-    PROFILE_TIMEZONE   timezone used for "today", default "Europe/Berlin"
-"""
 
 from __future__ import annotations
 
