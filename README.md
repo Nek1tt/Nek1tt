@@ -68,16 +68,17 @@ I build and explore projects in **CUDA, AI/ML, and Audio ML**, with a particular
 
 ---
 
-## Tech stack
+## ⚙️ Tech Stack
 
-**AI / ML / CV**  
-`Python` · `PyTorch` · `ONNX Runtime` · `OpenCV` · `NumPy` · `scikit-learn`
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,pytorch,opencv,cpp,linux,git,github,docker,fastapi,cmake" alt="Tech Stack">
+</p>
 
-**GPU / Systems / Robotics**  
-`CUDA` · `C++` · `ROS 2` · `Gazebo` · `Linux`
-
-**Backend / Engineering**  
-`FastAPI` · `WebSocket` · `Docker` · `Git` · `GitHub Actions`
+<p align="center">
+  <img src="https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white">
+  <img src="https://img.shields.io/badge/ONNX_Runtime-005CED?style=flat-square&logo=onnx&logoColor=white">
+  <img src="https://img.shields.io/badge/ROS_2-22314E?style=flat-square&logo=ros&logoColor=white">
+</p>
 
 ---
 
