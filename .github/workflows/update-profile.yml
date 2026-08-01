@@ -36,13 +36,32 @@ jobs:
           image-file: .generated/userstats.svg
           colors: dark
           custom-title: GitHub Statistics
-          featured-repository: rns-llm
-          max-languages: 10
+      
+          hide-keys: >-
+            featured,
+            mostStarred,
+            mostForked,
+            followers,
+            following,
+            sponsors,
+            sponsoring,
+            starredBy,
+            forkedBy,
+            watchedBy,
+            templates,
+            archived,
+            issues,
+            reviews,
+            private
+      
+          max-languages: 5
           animated-language-chart: false
+      
           border-radius: 8
           show-border: true
           fail-on-error: true
           commit-and-push: false
+      
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
