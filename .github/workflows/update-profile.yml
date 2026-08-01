@@ -1,0 +1,139 @@
+name: Update GitHub Profile
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+      timezone: "Europe/Berlin"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-github-profile
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v6
+
+      - name: Prepare directories
+        run: mkdir -p .generated profile
+
+      # Comprehensive statistics:
+      # repositories, stars/forks/watchers, contributions, PRs/issues/reviews,
+      # contribution targets, private contribution count (if shared on GitHub),
+      # and language distribution.
+      - name: Generate comprehensive GitHub statistics
+        id: userstats
+        continue-on-error: true
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: .generated/userstats.svg
+          colors: dark
+          custom-title: GitHub Statistics
+          featured-repository: rns-llm
+          max-languages: 10
+          animated-language-chart: false
+          border-radius: 8
+          show-border: true
+          fail-on-error: true
+          commit-and-push: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Custom cards generated directly from GitHub's contribution calendar.
+      # No public stats server is involved.
+      - name: Generate contribution streak and activity
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_LOGIN: ${{ github.repository_owner }}
+          OUTPUT_DIR: .generated
+          PROFILE_TIMEZONE: Europe/Berlin
+        run: python scripts/generate_contribution_cards.py
+
+      # Featured repository cards are rendered in Actions and saved as static SVGs.
+      - name: Generate rns-llm card
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=rns-llm&theme=github_dark&hide_border=false&description_lines_count=2
+          path: .generated/pin-rns-llm.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate Human Attributes Detector card
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Human_Attributes_Detector&theme=github_dark&hide_border=false&description_lines_count=2
+          path: .generated/pin-human-attributes.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate Raman Spectrum Analyzer card
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Raman-Spectrum-Analyzer&theme=github_dark&hide_border=false&description_lines_count=2
+          path: .generated/pin-raman.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate ROS AutoRace card
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=ROS_autorace_competition_2025&theme=github_dark&hide_border=false&description_lines_count=2
+          path: .generated/pin-ros-autorace.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate Sound Detector card
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=Sound-Detector&theme=github_dark&hide_border=false&description_lines_count=2
+          path: .generated/pin-sound-detector.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate AI Agents card
+        continue-on-error: true
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=AI-agent-autonomous-life&theme=github_dark&hide_border=false&description_lines_count=2
+          path: .generated/pin-ai-agents.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      # Only valid SVG files are promoted. If any generator is temporarily
+      # unavailable, the previous working SVG remains untouched.
+      - name: Keep only valid generated SVGs
+        run: python scripts/promote_generated_svgs.py .generated profile
+
+      - name: Commit updated profile assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/*.svg
+
+          if git diff --cached --quiet; then
+            echo "Profile statistics have not changed."
+            exit 0
+          fi
+
+          git commit -m "chore: update profile statistics"
+          git push
