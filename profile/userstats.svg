@@ -5,9 +5,9 @@
 <text x="150" y="110" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="450" fill="#8b949e">Year Joined</text>
 <text x="450" y="86" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="29" font-weight="700" fill="#58a6ff">21</text>
 <text x="450" y="110" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="450" fill="#8b949e">Repositories</text>
-<text x="750" y="86" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="29" font-weight="700" fill="#58a6ff">451</text>
+<text x="750" y="86" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="29" font-weight="700" fill="#58a6ff">450</text>
 <text x="750" y="110" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="450" fill="#8b949e">Commits · Year</text>
-<text x="150" y="156" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="29" font-weight="700" fill="#58a6ff">589</text>
+<text x="150" y="156" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="29" font-weight="700" fill="#58a6ff">588</text>
 <text x="150" y="180" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="450" fill="#8b949e">Total Commits</text>
 <text x="450" y="156" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="29" font-weight="700" fill="#58a6ff">20</text>
 <text x="450" y="180" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="450" fill="#8b949e">Pull Requests</text>
@@ -17,22 +17,22 @@
 <text x="24" y="226" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" font-weight="600" fill="#c9d1d9">Top Languages</text>
 <text x="24" y="258" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="500" fill="#c9d1d9">C++</text>
 <rect x="155" y="249" width="615" height="10" rx="5" fill="#21262d"/>
-<rect x="155" y="249" width="274.11" height="10" rx="5" fill="#f34b7d"/>
-<text x="876" y="258" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="#8b949e">44.6%</text>
+<rect x="155" y="249" width="253.45" height="10" rx="5" fill="#f34b7d"/>
+<text x="876" y="258" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="#8b949e">41.2%</text>
 <text x="24" y="283" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="500" fill="#c9d1d9">Python</text>
 <rect x="155" y="274" width="615" height="10" rx="5" fill="#21262d"/>
-<rect x="155" y="274" width="202.45" height="10" rx="5" fill="#3572A5"/>
-<text x="876" y="283" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="#8b949e">32.9%</text>
+<rect x="155" y="274" width="222.25" height="10" rx="5" fill="#3572A5"/>
+<text x="876" y="283" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="#8b949e">36.1%</text>
 <text x="24" y="308" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="500" fill="#c9d1d9">Jupyter Notebook</text>
 <rect x="155" y="299" width="615" height="10" rx="5" fill="#21262d"/>
-<rect x="155" y="299" width="87.76" height="10" rx="5" fill="#DA5B0B"/>
-<text x="876" y="308" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="#8b949e">14.3%</text>
+<rect x="155" y="299" width="81.15" height="10" rx="5" fill="#DA5B0B"/>
+<text x="876" y="308" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="#8b949e">13.2%</text>
 <text x="24" y="333" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="500" fill="#c9d1d9">JavaScript</text>
 <rect x="155" y="324" width="615" height="10" rx="5" fill="#21262d"/>
-<rect x="155" y="324" width="24.30" height="10" rx="5" fill="#f1e05a"/>
-<text x="876" y="333" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="#8b949e">4.0%</text>
-<text x="24" y="358" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="500" fill="#c9d1d9">Cuda</text>
+<rect x="155" y="324" width="30.21" height="10" rx="5" fill="#f1e05a"/>
+<text x="876" y="333" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="#8b949e">4.9%</text>
+<text x="24" y="358" text-anchor="start" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="500" fill="#c9d1d9">CSS</text>
 <rect x="155" y="349" width="615" height="10" rx="5" fill="#21262d"/>
-<rect x="155" y="349" width="6.64" height="10" rx="5" fill="#3A4E3A"/>
-<text x="876" y="358" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="#8b949e">1.1%</text>
+<rect x="155" y="349" width="8.41" height="10" rx="5" fill="#663399"/>
+<text x="876" y="358" text-anchor="end" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="500" fill="#8b949e">1.4%</text>
 </svg>
