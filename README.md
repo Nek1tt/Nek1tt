@@ -2,7 +2,7 @@
 
 # Nikita Abramov
 
-### AI / ML · CUDA · Robotics · Audio ML
+### AI / ML / CUDA / Robotics / Audio ML
 
 4th-year student at **Novosibirsk State University (NSU)**.  
 I build and explore projects in **CUDA, AI/ML, and Audio ML**, with a particular interest in efficient inference and applied machine learning.
